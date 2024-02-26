@@ -1,7 +1,118 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello Wits</h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<style>
+  /* Style for the navigation bar */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    overflow: hidden; /* Added overflow property to prevent wrapping */
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Changed to flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+  }
+
+  li {
+    /* float: left; Removed float property */
+  }
+
+  li:first-child {
+    margin-right: auto; /* Pushes the "Welcome" message to the left */
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to red on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  /* Style for the "Welcome" message */
+  .welcome-message {
+    color: white;
+  }
+
+  /* Style for the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Style for the images */
+  img {
+    width: 600px;
+    height: 400px;
+  }
+
+  /* Style for the image container */
+  .image-container {
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    
+  }
+
+  /* Style for individual images within the container */
+  .image-container article {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  article section{
+    border: 1px solid grey;
+  }
+  #first{
+    text-align: center;
+  }
+ h3,p{
+    text-align: center;
+ }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li class="welcome-message">Welcome to Software Design Website</li> <!-- Added the Welcome message here -->
+        <li><a href="#about us">About us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact us">Contact us</a></li>
+    </ul>
+</nav>
+
+<section id="first">
+    <h3>About Us</h3>
+    <p>We are a company dedicated to providing excellent services to our customers</p>
+    <img src="images/about.jpg" alt="">
+</section>
+<article class="image-container">
+    <section>
+        <h3>Web development</h3>
+        <p>We specialise in creating responsive and user friendly websites</p>
+        <img src="images/web development.jpg" alt="graphics"></section>
+    <section><h3>Graphic Design</h3><p>Our talented designers can bring your ideas to life with stunning visuals</p><img src="images/graphics.jpg" alt="graphics"></section>
+</article>
+
+<footer>
+    &copy; 2024 The Lucky Company. All rights reserved
+</footer>
+
+</body>
 </html>
